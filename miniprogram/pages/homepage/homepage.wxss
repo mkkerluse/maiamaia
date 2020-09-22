@@ -1,0 +1,12 @@
+/* miniprogram/pages/homepage/homepage.wxss */
+@import '../common/common.wxss';
+@import '../common/lib/weui.wxss';
+
+.searchbar-result{
+    margin-top: 0;
+    font-size: 14px;
+}
+
+.searchbar-result:before{
+    display: none;
+}

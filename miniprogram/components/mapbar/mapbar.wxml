@@ -1,0 +1,8 @@
+<!--components/mapbar/mapbar.wxml-->
+<view class="mapbar-item">
+  <view id="mapbar" class="mapbar-hd" bindtap="kindToggle">
+    <image wx:if="{{theme === 'dark'}}" class="kind-list-img" src="../resources/kind/map_dark.png"></image>
+    <image wx:else class="kind-list-img" src="../resources/kind/map.png"></image>
+    <view class="kind-list-text">通辽</view>
+  </view>
+</view>

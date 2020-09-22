@@ -1,0 +1,48 @@
+{
+  "light": {
+    "navigationBarTextStyle": "black",
+    "navigationBarBackgroundColor": "#F7F7F7",
+    "backgroundColor": "#F7F7F7",
+
+    "tabBarColor": "#7A7E83",
+    "tabBarSelectedColor": "#3cc51f",
+    "tabBarBorderStyle": "black",
+    "tabBarBackgroundColor": "#F7F7F7",
+   
+
+    "iconPathHomepage": "images/icon_homepage.png",
+    "selectedIconPathHomepage": "images/icon_homepage_HL.png",
+    "iconPathCategories": "images/icon_categories.png",
+    "selectedIconPathCategories": "images/icon_categories_HL.png",
+    "iconPathPublish": "images/icon_publish.png",
+    "selectedIconPathPublish": "images/icon_publish_HL.png",
+    "iconPathMySetting": "images/icon_mysetting.png",
+    "selectedIconPathMySetting": "images/icon_mysetting_HL.png",
+    "iconPathMyAds": "images/icon_myads.png",
+    "selectedIconPathMyAds": "images/icon_myads_HL.png",
+    "backgroundTextStyle": "dark"
+  },
+  "dark": {
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#1F1F1F",
+    "backgroundColor": "#1F1F1F",
+
+    "tabBarColor": "#FFFFFFCC",
+    "tabBarSelectedColor": "#51A937",
+    "tabBarBorderStyle": "white",
+    "tabBarBackgroundColor": "#1F1F1F",
+
+    "iconPathHomepage": "images/icon_homepage.png",
+    "selectedIconPathHomepage": "images/icon_homepage_HL.png",
+    "iconPathCategories": "images/icon_categories.png",
+    "selectedIconPathCategories": "images/icon_categories_HL.png",
+    "iconPathPublish": "images/icon_publish.png",
+    "selectedIconPathPublish": "images/icon_publish_HL.png",
+    "iconPathMySetting": "images/icon_mysetting.png",
+    "selectedIconPathMySetting": "images/icon_mysetting_HL.png",
+
+    "iconPathMyAds": "images/icon_myads.png",
+    "selectedIconPathMyAds": "images/icon_myads_HL.png",
+    "backgroundTextStyle": "light"
+  }
+}

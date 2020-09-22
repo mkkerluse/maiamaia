@@ -1,0 +1,62 @@
+{
+  "pages": [
+    "pages/homepage/homepage",
+    "pages/index/index",
+    "pages/userConsole/userConsole",
+    "pages/storageConsole/storageConsole",
+    "pages/databaseGuide/databaseGuide",
+    "pages/addFunction/addFunction",
+    "pages/deployFunctions/deployFunctions",
+    "pages/chooseLib/chooseLib",
+    "pages/openapi/openapi",
+    "pages/openapi/serverapi/serverapi",
+    "pages/openapi/callback/callback",
+    "pages/openapi/cloudid/cloudid",
+    "pages/im/im",
+    "pages/im/room/room"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "买啊卖啊",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "@tabBarColor",
+    "selectedColor": "@tabBarSelectedColor",
+    "borderStyle": "@tabBarBorderStyle",
+    "backgroundColor": "@tabBarBackgroundColor",
+    "list": [
+      {
+        "pagePath": "pages/homepage/homepage",
+        "iconPath": "@iconPathHomepage",
+        "selectedIconPath": "@selectedIconPathHomepage",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/userConsole/userConsole",
+        "iconPath": "@iconPathCategories",
+        "selectedIconPath": "@selectedIconPathCategories",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/storageConsole/storageConsole",
+        "iconPath": "@iconPathPublish",
+        "selectedIconPath": "@selectedIconPathPublish",
+        "text": "我要发布"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "@iconPathMySetting",
+        "selectedIconPath": "@selectedIconPathMySetting",
+        "text": "个人设置"
+      }
+    ]
+  },
+  "cloud": true,
+  "sitemapLocation": "sitemap.json",
+  "themeLocation": "app.theme.json",
+  "darkmode": true,
+  "resizable": true
+}
