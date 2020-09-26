@@ -1,0 +1,7 @@
+/* miniprogram/pages/myads/myads.wxss */
+
+@import '../common/common.wxss';
+
+.weui-agree .weui-agree__text {
+  display: inline;
+}

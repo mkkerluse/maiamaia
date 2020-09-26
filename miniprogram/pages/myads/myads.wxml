@@ -1,0 +1,81 @@
+<!--miniprogram/pages/myads/myads.wxml-->
+
+<view class="page" data-weui-theme="{{theme}}">
+    <mp-toptips msg="{{error}}" type="error" show="{{error}}"></mp-toptips>
+ <mp-form-page title="生成订单" subtitle="">
+        <mp-form id="form" rules="{{rules}}" models="{{formData}}">
+           
+              
+                <mp-cell  title="宝贝标题" ext-class="">
+                    <input  class="weui-input" placeholder="请输入宝贝名称"/>
+                </mp-cell>
+               
+                <mp-cell prop="date" title="有效日期" ext-class="">
+                    <picker data-field="date" mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+                        <view class="weui-input">{{date}}</view>
+                    </picker>
+
+                    <picker bindchange="bindCountryChange" value="{{countryIndex}}" range="{{countries}}">
+                        <view class="weui-select">{{countries[countryIndex]}}</view>
+                    </picker>
+                </mp-cell>
+                
+           
+            <!-- <mp-cells title="提交后表单项报错">
+                <mp-cell show-error prop="idcard" title="卡号" ext-class="">
+                    <input bindinput="formInputChange" data-field="idcard" class="weui-input" placeholder="请输入卡号"/>
+                </mp-cell>
+            </mp-cells> -->
+            <!-- <mp-cells title="开关">
+                <mp-cell title="标题文字" ext-class="">
+                    <switch slot="footer" checked />
+                </mp-cell>
+            </mp-cells> -->
+            <!-- <mp-cells title="产品介绍"> -->
+                <mp-cell title="产品介绍" ext-class="">
+                    <input class="weui-input" placeholder="请您输入。。。。" />
+                </mp-cell>
+            <!-- </mp-cells> -->
+            <!-- <mp-cells title="文本域">
+                <mp-cell has-header="{{false}}" has-footer="{{false}}" title="" ext-class="">
+                    <textarea class="weui-textarea" placeholder="请输入文本" style="height: 3.3em" />
+                    <view class="weui-textarea-counter">0/200</view>
+                </mp-cell>
+            </mp-cells> -->
+            <!-- <mp-cells title="选择">
+                <mp-cell ext-class="weui-cell_select weui-cell_select-before">
+                    <view slot="title" style="width: 105px">
+                        <picker bindchange="bindCountryCodeChange" value="{{countryCodeIndex}}" range="{{countryCodes}}">
+                        <view class="weui-select">{{countryCodes[countryCodeIndex]}}</view>
+                        </picker>
+                    </view>
+                    <input class="weui-input" placeholder="请输入号码" />
+                </mp-cell>
+            </mp-cells> -->
+            <!-- <mp-cells title="选择"> -->
+                <!-- <mp-cell has-header="{{false}}" ext-class="weui-cell_select">
+                    <picker bindchange="bindAccountChange" value="{{accountIndex}}" range="{{accounts}}">
+                        <view class="weui-select">{{accounts[accountIndex]}}</view>
+                    </picker>
+                        </mp-cell> -->
+                <mp-cell ext-class="weui-cell_select weui-cell_select-after">
+                    <view slot="title" class="weui-label">输入地址</view>
+                    <picker bindchange="bindCountryChange" value="{{countryIndex}}" range="{{countries}}">
+                        <view class="weui-select">{{countries[countryIndex]}}</view>
+                    </picker>
+                </mp-cell>
+            <!-- </mp-cells> -->
+        </mp-form>
+
+        <checkbox-group slot="tips" bindchange="bindAgreeChange">
+            <label class="weui-agree">
+                <checkbox class="weui-agree__checkbox-check" />
+                <text class="weui-agree__checkbox"></text>
+                <view class="weui-agree__text">阅读并同意<navigator>《相关条款》</navigator></view>
+            </label>
+        </checkbox-group>
+        <view slot="button">
+            <button class="weui-btn" type="primary" bindtap="submitForm">确定</button>
+        </view>
+    </mp-form-page>
+</view>
