@@ -1,21 +1,12 @@
-// miniprogram/pages/homepage/homepage.js
-import CustomPage from '../base/CustomPage'
-
-CustomPage({
+// miniprogram/pages/mysetting/mysetting.js
+Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    background: ['demo-text-1', 'demo-text-2', 'demo-text-3', 'demo-text-4'],
-    indicatorDots: true,
-    vertical: false,
-    autoplay: true,
-    interval: 2000,
-    duration: 500,
-    theme: 'light'
-  },
 
+  },
 
   /**
    * 生命周期函数--监听页面加载
@@ -70,9 +61,6 @@ CustomPage({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-    return {
-      title: '买啊卖啊',
-      path: 'pages/homepage/homepage'
-    }
+
   }
 })

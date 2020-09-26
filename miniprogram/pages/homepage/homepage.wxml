@@ -1,15 +1,75 @@
 <!--miniprogram/pages/homepage/homepage.wxml-->
 <view class="page" data-weui-theme="{{theme}}">
-
+  <mp-navigation-bar loading="{{false}}" show="{{true}}" animated="{{false}}" color="{{color}}" background="{{background}}" title="买啊卖啊" back="{{false}}" searchbar="{{true}}"></mp-navigation-bar>
     <view class="weui-flex">
         <view><view class="placeholder">
           <mp-mapbar></mp-mapbar>
         </view></view>
-        <view class="weui-flex__item"><view class="placeholder">
-          <mp-searchbar bindselectresult="selectResult" search="{{search}}"></mp-searchbar>
-        </view></view>
-        
     </view>
+
+    <view class="page-body">
+      <view class="page-section page-section-spacing swiper">
+        <swiper indicator-dots="{{indicatorDots}}"
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+          <block wx:for="{{background}}" wx:key="*this">
+            <swiper-item>
+              <view class="swiper-item {{item}}"></view>
+            </swiper-item>
+          </block>
+        </swiper>
+      </view>
+
+    <view class="page-section">
+      <view class="text-img-hd">
+        <image class="text-img" src="../../images/icon_text.png"></image>
+        <view class="text-text">买卖 热榜</view>
+      </view>
+      <view class="page-section-spacing">
+        <view class="flex-wrp" style="flex-direction:row;">
+          <view class="flex-item demo-text-1"></view>
+          <view class="flex-item demo-text-2"></view>
+        </view>
+      </view>
+      <view class="page-section-spacing">
+        <view class="flex-wrp" style="flex-direction:row;">
+          <view class="flex-item demo-text-1"></view>
+          <view class="flex-item demo-text-2"></view>
+        </view>
+      </view>
+      <view class="page-section-spacing">
+        <view class="flex-wrp" style="flex-direction:row;">
+          <view class="flex-item demo-text-1"></view>
+          <view class="flex-item demo-text-2"></view>
+        </view>
+      </view>
+      <view class="page-section-spacing">
+        <view class="flex-wrp" style="flex-direction:row;">
+          <view class="flex-item demo-text-1"></view>
+          <view class="flex-item demo-text-2"></view>
+        </view>
+      </view>
+      <view class="page-section-spacing">
+        <view class="flex-wrp" style="flex-direction:row;">
+          <view class="flex-item demo-text-1"></view>
+          <view class="flex-item demo-text-2"></view>
+        </view>
+      </view>
+      <view class="page-section-spacing">
+        <view class="flex-wrp" style="flex-direction:row;">
+          <view class="flex-item demo-text-1"></view>
+          <view class="flex-item demo-text-2"></view>
+        </view>
+      </view>
+      <view class="page-section-spacing">
+        <view class="flex-wrp" style="flex-direction:row;">
+          <view class="flex-item demo-text-1"></view>
+          <view class="flex-item demo-text-2"></view>
+        </view>
+      </view>
+    </view>
+  </view>
 </view>
+
+
 
 

@@ -78,23 +78,23 @@
 
 
 .mapbar-item {
-  margin: 10px 0;
-  background-color: #FFFFFF;
-  border-radius: 2px;
+  margin: 0px 0;
+  border-radius: 1px;
   overflow: hidden;
 }
-.kind-list-item:first-child {
+.mapbar-item:first-child {
   margin-top: 0;
 }
-.kind-list-text{
-  flex: 1;
+.mapbar-text{
+  font-size: small;
+  margin-top: 5px;
 }
-.kind-list-img {
-  width: 30px;
-  height: 30px;
+.mapbar-img {
+  width: 20px;
+  height: 20px;
 }
 .mapbar-hd {
-  padding: 15px;
+  padding: 12px;
   display: flex;
   align-items: center;
 
